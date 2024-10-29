@@ -1,0 +1,38 @@
+/* components/Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    position: fixed; /* Make the header fixed */
+    top: 0;          /* Position it at the top */
+    left: 0;         /* Align it to the left */
+    width: 100%;    /* Full width */
+    z-index: 1000;  /* Ensure it stays above other content */
+    height: 12vh;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.header-right a:hover {
+    color: #ddd;
+}
+
+/* Add some margin to the top of the main content to avoid overlap */
+body {
+    padding-top: 70px; /* Adjust this based on your header height */
+}
